@@ -12,12 +12,14 @@ namespace Vehicle___Tisdags_projekt
         public string Brand { get; set; }
         public string Model { get; set; }
         public int Door { get; set; }
+        public string Registrationnumber { get; set; }
 
-        public Vehicle(string brand, string model, int door)
+        public Vehicle(string brand, string model, int door, string registrationnumber)
         {
             Brand = brand;
             Model = model;
             Door = door;
+            Registrationnumber = registrationnumber;
         }
 
         public static void AddVehicle(List<Vehicle> vehicle, Vehicle vehicle1)
@@ -30,11 +32,11 @@ namespace Vehicle___Tisdags_projekt
             return vehicles.OfType<T>().ToList();
         }
 
-        public static void RemoveVehicle(List<Vehicle> vehicles, int index)
+        public static void RemoveVehicle(List<Vehicle> vehicles, Vehicle vehicle)
         {
-            Console.WriteLine($"\nSäljer fordon: {vehicles[index-1]}");
-            vehicles.RemoveAt(index-1);
-
+                vehicles.Remove(vehicle);
+                Console.WriteLine($"Nu har du raderat: \nMärke: {vehicle.Brand} \nModell: {vehicle.Model} \nAntal dörrar: {vehicle.Door} \nReg nr: {vehicle.Registrationnumber}\n");
+            
         }
 
 

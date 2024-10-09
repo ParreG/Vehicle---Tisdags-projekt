@@ -8,7 +8,7 @@ namespace Vehicle___Tisdags_projekt
 {
     internal class Motorcycle : Vehicle,IDriveable
     {
-        public Motorcycle(string brand, string model, int door) : base(brand, model, door)
+        public Motorcycle(string brand, string model, int door, string registrationnumber) : base(brand, model, door, registrationnumber)
         {
             
         }

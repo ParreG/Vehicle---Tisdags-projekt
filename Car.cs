@@ -9,7 +9,7 @@ namespace Vehicle___Tisdags_projekt
 {
     public class Car : Vehicle,IDriveable
     {
-        public Car(string brand , string model, int door) : base (brand, model, door)
+        public Car(string brand, string model, int door, string registrationnumber) : base(brand, model, door, registrationnumber)
         {
             
         }

@@ -8,7 +8,7 @@ namespace Vehicle___Tisdags_projekt
 {
     internal class Truck : Vehicle, IDriveable
     {
-        public Truck(string brand, string model, int door) : base(brand, model, door)
+        public Truck(string brand, string model, int door, string registrationnumber) : base(brand, model, door, registrationnumber)
         {
             
         }
